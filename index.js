@@ -5,6 +5,23 @@ const util = require("util");
 const readMeGenerator = require("./utils/generateMarkdown");
 const readMeWrite = util.promisify(fs.writeFile);
 
+//[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+//[![Appache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+//[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+//[![GNU v3.0](https://img.shields.io/badge/License-GNU%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+function license(input){
+    if (input === "MIT"){
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    } else if (input === "APACHE"){
+        return "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    } else if (input === "GNU v3.0"){
+        return "[![License: GNU v3.0](https://img.shields.io/badge/License-GNU%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)"
+    }else if (input === "Mozilla 2.0"){
+        return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
+
+}
 
 function initialPrompt() {
     return inquirer.prompt([
@@ -32,7 +49,7 @@ function initialPrompt() {
             type: "list",
             name: "projectLicense",
             message: "Will You be using a license? if so select the license type",
-            choices: ["MIT", "APACHE","None"]
+            choices: ["MIT", "APACHE","GNU v3.0","Mozilla 2.0"]
         },
         {
             type: "input",
