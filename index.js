@@ -2,6 +2,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const readMeGenerator = require("./utils/generateMarkdown");
+const readMeWrite = util.promisify(fs.writeFile);
 
 
 function initialPrompt() {
@@ -12,7 +14,30 @@ function initialPrompt() {
             message: "What is the name of your project?"
         },
         {
-            
+            type: "input",
+            name: "projectDescription",
+            message: "What is the description of your project?"
+        },
+        {
+            type: "input",
+            name: "projectUse",
+            message: "What is the use of your project?"
+        },
+        {
+            type: "list",
+            name: "projectLicense",
+            message: "Will You be using a license? if so select the license type",
+            selection: ["MIT", "APACHE","None"]
+        },
+        {
+            type: "input",
+            name: "projectContributions",
+            message: "Does your project have any contributions? If so, list them here. otherwise, leave this blank"
+        },
+
+
+}
+    ]);
 }
 
 
