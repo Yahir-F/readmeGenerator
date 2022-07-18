@@ -24,6 +24,11 @@ function initialPrompt() {
             message: "What is the use of your project?"
         },
         {
+            type: "input",
+            name: "projectinstallation",
+            message: "What are the installation instructions for your project?"
+        },
+        {
             type: "list",
             name: "projectLicense",
             message: "Will You be using a license? if so select the license type",
@@ -34,9 +39,17 @@ function initialPrompt() {
             name: "projectContributions",
             message: "Does your project have any contributions? If so, list them here. otherwise, leave this blank"
         },
-
-
-}
+        {
+            type: "input",
+            name: "githubUsername",
+            message: "What is your github username?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email address?"
+        },
+        
     ]);
 }
 
