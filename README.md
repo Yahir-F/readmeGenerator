@@ -1,38 +1,38 @@
 
    <h1 align ="center">Helping Hand<h1>
 
-undefined
+
 
 ## Description
-A project to find nearby charities based on location
+Project to connect people to charities
 
 # Table of Contents
 * [Description](#description)
-* [Project-Use](#usage)
-* [Project-Installation](#installation)
-* [ProjectLicense](#license)
-* [Project-Contributions](#contributions)
-* [Github-Username](#github)
+* [Usage](#usage)
+* [Installation](#installation)
+* [License](#license)
+* [Contributions](#contributions)
+* [Github](#github)
 
-## Project-Use
-To provide an easier way for people to find donation centers
+## Usage
+Help others
 
-## Project-Installation
-intall via: 
+## Installation
+Run the file
 
-## ProjectLicense
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+## License
+![License](https://img.shields.io/badge/license-Mozilla 2.0-blue.svg)
 <br>
-This Project is licensed under the MIT license.
+This Project is licensed under the Mozilla 2.0 license.
 
-## Project-Contributions
-Myself
+## Contributions
+Yahir-F
 
-## Github-Username
+## Github
 Questions? 
 Contact me through my github Yahir-F
 
-Email: @gmail.com
+Email: gmail.com
 
 
 
