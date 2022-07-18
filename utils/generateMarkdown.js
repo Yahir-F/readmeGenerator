@@ -9,27 +9,27 @@ ${response.projectDescription}
 
 # Table of Contents
 * [Description](#description)
-* [Project-Use](#usage)
-* [Project-Installation](#installation)
-* [ProjectLicense](#license)
-* [Project-Contributions](#contributions)
-* [Github-Username](#github)
+* [Usage](#usage)
+* [Installation](#installation)
+* [License](#license)
+* [Contributions](#contributions)
+* [Github](#github)
 
-## Project-Use
+## Usage
 ${response.projectUse}
 
-## Project-Installation
+## Installation
 ${response.projectinstallation}
 
-## ProjectLicense
+## License
 ![License](https://img.shields.io/badge/license-${response.projectLicense}-blue.svg)
 <br>
 This Project is licensed under the ${response.projectLicense} license.
 
-## Project-Contributions
+## Contributions
 ${response.projectContributions}
 
-## Github-Username
+## Github
 Questions? 
 Contact me through my github ${response.githubUsername}
 
