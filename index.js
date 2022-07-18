@@ -32,7 +32,7 @@ function initialPrompt() {
             type: "list",
             name: "projectLicense",
             message: "Will You be using a license? if so select the license type",
-            selection: ["MIT", "APACHE","None"]
+            choices: ["MIT", "APACHE","None"]
         },
         {
             type: "input",
@@ -52,6 +52,18 @@ function initialPrompt() {
         
     ]);
 }
+
+async function initial() {
+    try {
+        const response = await initialPrompt();
+        const readMe = readMeGenerator(response);
+        await readMeWrite('./README.md', readMe);
+        console.log("File has been written");
+    } catch (err) {
+        console.log(err);
+    }
+}
+initial();
 
 
 
