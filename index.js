@@ -37,8 +37,8 @@ function initialPrompt() {
         },
         {
             type: "input",
-            name: "projectUse",
-            message: "What is the use of your project?"
+            name: "technologies",
+            message: "What technologies are used in your project?",
         },
         {
             type: "input",

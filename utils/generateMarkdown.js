@@ -9,14 +9,17 @@ ${response.projectDescription}
 
 # Table of Contents
 * [Description](#description)
-* [Usage](#usage)
+* [Technologies](#technologies)
 * [Installation](#installation)
 * [License](#license)
 * [Contributions](#contributions)
 * [Github](#github)
 
-## Usage
-${response.projectUse}
+## Technologies
+
+<li>${response.technologies}</li>
+
+
 
 ## Installation
 ${response.projectinstallation}
@@ -41,8 +44,6 @@ Email: ${response.email}
 
 
     `;
-
-
 }
 
 module.exports = readMeGenerator;
